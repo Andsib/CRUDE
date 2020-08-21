@@ -1,0 +1,149 @@
+.employee {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  background-color: #e2e2e2;
+}
+
+.employee__form__title {
+  font-size: 18px;
+}
+
+.employee__form__input:not(:last-child) {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #09011A;
+  border-radius: 5px;
+}
+.employee__form__input:not(:last-child):focus {
+  border-color: #879cfe;
+}
+.employee__form__input:not(:last-child).error {
+  border-color: #ff3f41;
+}
+
+.employee__form__input:last-child {
+  display: block;
+  margin: 0 auto;
+  color: black;
+  background-color: #44b659;
+  border: 1px solid #09011A;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.employee__form__input:last-child:hover {
+  background-color: #879cfe;
+}
+.employee__form__input:last-child:active {
+  background-color: #ecefff;
+}
+
+.employee__form__error {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.employee__form__error_transparent {
+  color: transparent;
+}
+
+.employee__form__error_visible {
+  color: #ff3f41;
+}
+
+.employee__list {
+  padding: 20px;
+  background-color: #e2e2e2;
+}
+
+.employee__list__wrapper {
+  padding: 20px;
+  margin-bottom: 35px;
+  background-color: #bdbdbd;
+  position: relative;
+}
+
+.employee__list__editorWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+.employee__list__name {
+  font-weight: bold;
+}
+
+.employee__list__position {
+  text-decoration: underline;
+  margin: 10px 0;
+}
+
+.employee__list__Email::after {
+  margin: 0 10px;
+  content: "|";
+}
+
+.employee__list__edit {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-image: url("../img/edit.png");
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.employee__list__edit:hover {
+  background-color: #8cd499;
+}
+.employee__list__edit:active {
+  background-color: #369147;
+}
+
+.employee__list__delete {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-image: url("../img/delete.png");
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.employee__list__delete:hover {
+  background-color: #09011A;
+}
+.employee__list__delete:active {
+  background-color: #e2e2e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  margin: 20px auto;
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=app.css.map */

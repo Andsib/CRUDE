@@ -1,0 +1,61 @@
+.employee__list {
+    padding: 20px;
+    background-color: $light-grey;
+}
+.employee__list__wrapper {
+    padding: 20px;
+    margin-bottom: 35px;
+    background-color: $grey;
+    position: relative;
+}
+.employee__list__editorWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+.employee__list__name {
+    font-weight: bold;
+}
+.employee__list__position {
+    text-decoration: underline;
+    margin: 10px 0;
+}
+.employee__list__Email::after {
+    margin: 0 10px;
+    content: '|' ;
+}
+.employee__list__edit {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-image: url('../img/edit.png');
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-color: lighten($green, 20%);
+    }
+    &:active {
+        background-color: darken($green, 10%);
+    }
+}
+.employee__list__delete {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-image: url('../img/delete.png');
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $black;
+    }
+    &:active {
+        background-color: $light-grey;
+    }
+}

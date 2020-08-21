@@ -1,0 +1,54 @@
+@import './colors.scss';
+
+.employee {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    background-color: $light-grey;
+}
+.employee__form__title {
+    font-size: 18px;
+}
+.employee__form__input:not(:last-child) {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid $black;
+    border-radius: 5px;
+    &:focus {
+        border-color: $violet;
+    }
+    &.error {
+        border-color: $red;
+    }
+}
+
+.employee__form__input:last-child {
+    display: block;
+    margin: 0 auto;
+    color: black;
+    background-color: $green;
+    border: 1px solid $black;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $violet;
+    }
+    &:active {
+        background-color: lighten($violet, 20%);
+    }
+}
+.employee__form__error {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.employee__form__error_transparent {
+    color: transparent
+}
+.employee__form__error_visible {
+    color: $red;
+}

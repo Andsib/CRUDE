@@ -1,0 +1,2 @@
+showEmployeeList(data);
+addEmployee();
